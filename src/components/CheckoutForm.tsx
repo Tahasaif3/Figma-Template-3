@@ -134,7 +134,7 @@ export function CheckoutForm() {
         </div>
       </div>
 
-      <h3 className="text-lg font-semibold mt-6">What's your contact information?</h3>
+      <h3 className="text-lg font-semibold mt-6">What`s your contact information?</h3>
       <Input
         name="email"
         type="email"
@@ -154,7 +154,7 @@ export function CheckoutForm() {
         className="w-full"
       />
 
-      <h3 className="text-lg font-semibold mt-6">What's your PAN?</h3>
+      <h3 className="text-lg font-semibold mt-6">What`s your PAN?</h3>
       <Input
         name="pan"
         placeholder="PAN"
