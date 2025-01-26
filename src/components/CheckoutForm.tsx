@@ -36,16 +36,16 @@ export function CheckoutForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <h3 className="text-lg font-semibold">Enter your name and address:</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <form onSubmit={handleSubmit} className="space-y-6 max-w-[600px] mx-auto md:mx-0">
+      <h3 className="text-lg font-semibold text-center md:text-left">Enter your name and address:</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Input
           name="firstName"
           placeholder="First Name"
           value={formData.firstName}
           onChange={handleInputChange}
           required
-          className="w-full"
+          className="w-full p-3"
         />
         <Input
           name="lastName"
@@ -53,7 +53,7 @@ export function CheckoutForm() {
           value={formData.lastName}
           onChange={handleInputChange}
           required
-          className="w-full"
+          className="w-full p-3"
         />
         <Input
           name="addressLine1"
@@ -61,21 +61,21 @@ export function CheckoutForm() {
           value={formData.addressLine1}
           onChange={handleInputChange}
           required
-          className="w-full col-span-full"
+          className="w-full p-3 col-span-full"
         />
         <Input
           name="addressLine2"
           placeholder="Address Line 2"
           value={formData.addressLine2}
           onChange={handleInputChange}
-          className="w-full col-span-full"
+          className="w-full p-3 col-span-full"
         />
         <Input
           name="addressLine3"
           placeholder="Address Line 3"
           value={formData.addressLine3}
           onChange={handleInputChange}
-          className="w-full col-span-full"
+          className="w-full p-3 col-span-full"
         />
         <Input
           name="postalCode"
@@ -83,7 +83,7 @@ export function CheckoutForm() {
           value={formData.postalCode}
           onChange={handleInputChange}
           required
-          className="w-full"
+          className="w-full p-3"
         />
         <Input
           name="locality"
@@ -91,10 +91,10 @@ export function CheckoutForm() {
           value={formData.locality}
           onChange={handleInputChange}
           required
-          className="w-full"
+          className="w-full p-3"
         />
         <Select name="state" onValueChange={(value) => setFormData((prev) => ({ ...prev, state: value }))}>
-          <SelectTrigger className="w-full">
+          <SelectTrigger className="w-full p-3">
             <SelectValue placeholder="State/Territory" />
           </SelectTrigger>
           <SelectContent>
@@ -104,7 +104,7 @@ export function CheckoutForm() {
           </SelectContent>
         </Select>
         <Select name="country" defaultValue="India" disabled>
-          <SelectTrigger className="w-full">
+          <SelectTrigger className="w-full p-3">
             <SelectValue placeholder="Country" />
           </SelectTrigger>
           <SelectContent>
@@ -116,64 +116,59 @@ export function CheckoutForm() {
       <div className="space-y-2">
         <div className="flex items-center space-x-2">
           <Checkbox id="saveAddress" />
-          <label
-            htmlFor="saveAddress"
-            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-          >
+          <label htmlFor="saveAddress" className="text-sm">
             Save this address to my profile
           </label>
         </div>
         <div className="flex items-center space-x-2">
           <Checkbox id="preferredAddress" />
-          <label
-            htmlFor="preferredAddress"
-            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-          >
+          <label htmlFor="preferredAddress" className="text-sm">
             Make this my preferred address
           </label>
         </div>
       </div>
 
-      <h3 className="text-lg font-semibold mt-6">What`s your contact information?</h3>
-      <Input
-        name="email"
-        type="email"
-        placeholder="Email"
-        value={formData.email}
-        onChange={handleInputChange}
-        required
-        className="w-full"
-      />
-      <Input
-        name="phone"
-        type="tel"
-        placeholder="Phone Number"
-        value={formData.phone}
-        onChange={handleInputChange}
-        required
-        className="w-full"
-      />
-
-      <h3 className="text-lg font-semibold mt-6">What`s your PAN?</h3>
-      <Input
-        name="pan"
-        placeholder="PAN"
-        value={formData.pan}
-        onChange={handleInputChange}
-        required
-        className="w-full"
-      />
-      <div className="flex items-center space-x-2">
-        <Checkbox id="savePAN" />
-        <label
-          htmlFor="savePAN"
-          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-        >
-          Save PAN details to Nike Profile
-        </label>
+      <div className="space-y-4">
+        <h3 className="text-lg font-semibold text-center md:text-left">What`s your contact information?</h3>
+        <Input
+          name="email"
+          type="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleInputChange}
+          required
+          className="w-full p-3"
+        />
+        <Input
+          name="phone"
+          type="tel"
+          placeholder="Phone Number"
+          value={formData.phone}
+          onChange={handleInputChange}
+          required
+          className="w-full p-3"
+        />
       </div>
 
-      <div className="flex items-start space-x-2 mt-6">
+      <div className="space-y-4">
+        <h3 className="text-lg font-semibold text-center md:text-left">What`s your PAN?</h3>
+        <Input
+          name="pan"
+          placeholder="PAN"
+          value={formData.pan}
+          onChange={handleInputChange}
+          required
+          className="w-full p-3"
+        />
+        <div className="flex items-center space-x-2">
+          <Checkbox id="savePAN" />
+          <label htmlFor="savePAN" className="text-sm">
+            Save PAN details to Nike Profile
+          </label>
+        </div>
+      </div>
+
+      <div className="flex items-start space-x-2">
         <Checkbox id="agreement" required />
         <label htmlFor="agreement" className="text-sm text-gray-600 leading-relaxed">
           I have read and consent to Nike processing my information in accordance with the{" "}
@@ -188,8 +183,8 @@ export function CheckoutForm() {
         </label>
       </div>
 
-      <Button type="submit" className="w-full">
-        Place Order
+      <Button type="submit" className="w-full p-3 bg-gray-200 text-gray-800 hover:bg-gray-300">
+        Continue
       </Button>
     </form>
   )
