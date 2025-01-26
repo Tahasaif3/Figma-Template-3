@@ -11,8 +11,8 @@ export default function CheckoutPage() {
   return (
     <div className="bg-white min-h-screen flex flex-col">
       <Navbar />
-      <div className="container mx-auto px-4 lg:px-16 py-8 flex-grow">
-        <div className="lg:flex lg:space-x-8 lg:items-start">
+      <div className="container mx-auto sm:px-4 lg:px-16 py-8 flex-grow">
+        <div className="flex flex-col lg:flex-row lg:space-x-8 lg:items-start space-y-6 lg:space-y-0">
           {/* Left Section */}
           <div className="lg:w-2/3 w-full">
             <h2 className="text-2xl font-semibold mb-4">How would you like to get your order?</h2>
@@ -49,7 +49,7 @@ export default function CheckoutPage() {
           </div>
 
           {/* Right Section */}
-          <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
+          <div className="lg:w-1/3 w-full">
             <OrderSummary />
           </div>
         </div>
