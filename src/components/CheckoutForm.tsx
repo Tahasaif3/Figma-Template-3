@@ -36,16 +36,19 @@ export function CheckoutForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 max-w-[600px] mx-auto md:mx-0">
-      <h3 className="text-lg font-semibold text-center md:text-left">Enter your name and address:</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="text-center lg:text-left">
+        <h3 className="text-lg font-semibold">Enter your name and address:</h3>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Input
           name="firstName"
           placeholder="First Name"
           value={formData.firstName}
           onChange={handleInputChange}
           required
-          className="w-full p-3"
+          className="w-full p-3 col-span-2 sm:col-span-1"
         />
         <Input
           name="lastName"
@@ -53,7 +56,7 @@ export function CheckoutForm() {
           value={formData.lastName}
           onChange={handleInputChange}
           required
-          className="w-full p-3"
+          className="w-full p-3 col-span-2 sm:col-span-1"
         />
         <Input
           name="addressLine1"
@@ -61,21 +64,21 @@ export function CheckoutForm() {
           value={formData.addressLine1}
           onChange={handleInputChange}
           required
-          className="w-full p-3 col-span-full"
+          className="w-full p-3 col-span-2"
         />
         <Input
           name="addressLine2"
           placeholder="Address Line 2"
           value={formData.addressLine2}
           onChange={handleInputChange}
-          className="w-full p-3 col-span-full"
+          className="w-full p-3 col-span-2"
         />
         <Input
           name="addressLine3"
           placeholder="Address Line 3"
           value={formData.addressLine3}
           onChange={handleInputChange}
-          className="w-full p-3 col-span-full"
+          className="w-full p-3 col-span-2"
         />
         <Input
           name="postalCode"
@@ -129,7 +132,9 @@ export function CheckoutForm() {
       </div>
 
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold text-center md:text-left">What`s your contact information?</h3>
+        <div className="text-center lg:text-left">
+          <h3 className="text-lg font-semibold">What`s your contact information?</h3>
+        </div>
         <Input
           name="email"
           type="email"
@@ -151,7 +156,9 @@ export function CheckoutForm() {
       </div>
 
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold text-center md:text-left">What`s your PAN?</h3>
+        <div className="text-center lg:text-left">
+          <h3 className="text-lg font-semibold">What`s your PAN?</h3>
+        </div>
         <Input
           name="pan"
           placeholder="PAN"
@@ -183,7 +190,7 @@ export function CheckoutForm() {
         </label>
       </div>
 
-      <Button type="submit" className="w-full p-3 bg-gray-200 text-gray-800 hover:bg-gray-300">
+      <Button type="submit" variant="secondary" className="w-full p-3 bg-gray-200 text-gray-800 hover:bg-gray-300">
         Continue
       </Button>
     </form>
