@@ -1,0 +1,189 @@
+[
+    {
+      "productName": "Nike Air Zoom Pegasus 38",
+      "category": "Women's Running Shoes",
+      "price": 10995,
+      "inventory": 28,
+      "colors": ["Pink", "White"],
+      "status": "Best Seller",
+      "image": "https://template-03-api.vercel.app/products/8.png",
+      "description": "The Nike Air Zoom Pegasus 38 offers a responsive cushioning and breathable mesh upper for comfortable long-distance runs. Its versatile design makes it suitable for both training and everyday wear.",
+      "gender": "women"
+    },
+    {
+      "productName": "Nike React Infinity Run Flyknit 3",
+      "category": "Men's Running Shoes",
+      "price": 14995,
+      "inventory": 15,
+      "colors": ["Blue", "Black"],
+      "status": "Just In",
+      "image": "https://template-03-api.vercel.app/products/9.png",
+      "description": "Experience smooth transitions and soft landings with the Nike React Infinity Run Flyknit 3. Designed to help reduce injury, these shoes provide stability and comfort for your daily runs.",
+      "gender": "men"
+    },
+    {
+      "productName": "Nike Air Max 90",
+      "category": "Men's Shoes",
+      "price": 9995,
+      "inventory": 32,
+      "colors": ["White", "Red", "Blue"],
+      "status": "Iconic",
+      "image": "https://template-03-api.vercel.app/products/1.png",
+      "description": "The Nike Air Max 90 continues to stand the test of time with its classic silhouette and comfortable cushioning. This iconic sneaker brings both style and function to your everyday look.",
+      "gender": "men"
+    },
+    {
+      "productName": "Nike Dri-FIT ADV Run Division",
+      "category": "Women's Running Top",
+      "price": 3495,
+      "inventory": 45,
+      "colors": ["Black", "Teal"],
+      "status": "Sustainable Materials",
+      "image": "https://template-03-api.vercel.app/products/2.png",
+      "description": "Stay cool and dry during your runs with the Nike Dri-FIT ADV Run Division top. Made with sustainable materials, it wicks away sweat and provides excellent ventilation.",
+      "gender": "women"
+    },
+    {
+      "productName": "Nike Sportswear Tech Fleece",
+      "category": "Men's Full-Zip Hoodie",
+      "price": 8995,
+      "inventory": 20,
+      "colors": ["Gray", "Black"],
+      "status": "Trending",
+      "image": "https://template-03-api.vercel.app/products/3.png",
+      "description": "The Nike Sportswear Tech Fleece hoodie offers warmth without the weight. Its innovative fabric and modern design make it perfect for cooler days and athletic lifestyles.",
+      "gender": "men"
+    },
+    {
+      "productName": "Nike One Luxe",
+      "category": "Women's Mid-Rise Leggings",
+      "price": 5995,
+      "inventory": 38,
+      "colors": ["Black", "Purple"],
+      "status": "Best Seller",
+      "image": "https://template-03-api.vercel.app/products/4.png",
+      "description": "Experience premium comfort with the Nike One Luxe leggings. Designed for all-day wear, these leggings feature a soft, supportive fabric that moves with you through workouts and beyond.",
+      "gender": "women"
+    },
+    {
+      "productName": "Nike SB Zoom Blazer Mid Premium",
+      "category": "Skate Shoes",
+      "price": 8495,
+      "inventory": 18,
+      "colors": ["Sail", "Black"],
+      "status": "Just In",
+      "image": "https://template-03-api.vercel.app/products/5.png",
+      "description": "The Nike SB Zoom Blazer Mid Premium offers durability and board feel for skaters. With its classic look and modern performance features, it's great for skating and casual wear alike.",
+      "gender": "unisex"
+    },
+    {
+      "productName": "Nike Pro Dri-FIT",
+      "category": "Men's Sleeveless Top",
+      "price": 2295,
+      "inventory": 50,
+      "colors": ["White", "Black", "Red"],
+      "status": "Essential",
+      "image": "https://template-03-api.vercel.app/products/6.png",
+      "description": "Stay cool during intense workouts with the Nike Pro Dri-FIT sleeveless top. Its moisture-wicking fabric and streamlined fit make it ideal for training or as a base layer.",
+      "gender": "men"
+    },
+    {
+      "productName": "Nike Air Zoom SuperRep 3",
+      "category": "Women's HIIT Shoes",
+      "price": 11995,
+      "inventory": 22,
+      "colors": ["Bright Mango", "White"],
+      "status": "New Release",
+      "image": "https://template-03-api.vercel.app/products/7.png",
+      "description": "Designed for high-intensity interval training, the Nike Air Zoom SuperRep 3 provides responsive cushioning and stability for multi-directional movements. Perfect for gym workouts and fitness classes.",
+      "gender": "women"
+    },
+    {
+      "productName": "Nike Therma-FIT ADV",
+      "category": "Men's Winterized Jacket",
+      "price": 15995,
+      "inventory": 15,
+      "colors": ["Black", "Olive"],
+      "status": "Cold Weather Essential",
+      "image": "https://template-03-api.vercel.app/products/8.png",
+      "description": "Brave the cold with the Nike Therma-FIT ADV jacket. Featuring advanced insulation and weather-resistant fabric, this jacket keeps you warm and dry during outdoor winter activities.",
+      "gender": "men"
+    },
+    {
+      "productName": "Nike Free RN 5.0",
+      "category": "Women's Running Shoes",
+      "price": 8995,
+      "inventory": 28,
+      "colors": ["Violet", "White"],
+      "status": "Flexible Comfort",
+      "image": "https://template-03-api.vercel.app/products/9.png",
+      "description": "Experience a barefoot-like feel with the Nike Free RN 5.0. These ultra-flexible running shoes allow your feet to move naturally, perfect for shorter runs and gym sessions.",
+      "gender": "women"
+    },
+    {
+      "productName": "Nike Dri-FIT Academy",
+      "category": "Men's Soccer Pants",
+      "price": 3995,
+      "inventory": 40,
+      "colors": ["Black", "Navy"],
+      "status": "Team Favorite",
+      "image": "https://template-03-api.vercel.app/products/1.png",
+      "description": "Enhance your soccer training with the Nike Dri-FIT Academy pants. Featuring sweat-wicking fabric and a tapered fit, these pants offer comfort and mobility on and off the field.",
+      "gender": "men"
+    },
+    {
+      "productName": "Nike Yoga Luxe",
+      "category": "Women's Infinalon Crop Top",
+      "price": 4495,
+      "inventory": 35,
+      "colors": ["Dusty Pink", "Black"],
+      "status": "Studio Essential",
+      "image": "https://template-03-api.vercel.app/products/2.png",
+      "description": "Practice in style with the Nike Yoga Luxe crop top. Made with soft, form-fitting Infinalon fabric, it provides gentle compression and a distraction-free fit for your yoga sessions.",
+      "gender": "women"
+    },
+    {
+      "productName": "Nike Air Zoom Tempo NEXT%",
+      "category": "Men's Racing Shoes",
+      "price": 17995,
+      "inventory": 10,
+      "colors": ["Electric Green", "Black"],
+      "status": "Performance Driven",
+      "image": "https://template-03-api.vercel.app/products/3.png",
+      "description": "Push your limits with the Nike Air Zoom Tempo NEXT%. Designed for speed and responsiveness, these racing shoes feature ZoomX foam and Air Zoom units for explosive energy return.",
+      "gender": "men"
+    },
+    {
+      "productName": "Nike Sportswear Club Fleece",
+      "category": "Men's Pullover Hoodie",
+      "price": 4995,
+      "inventory": 55,
+      "colors": ["Gray Heather", "Black", "Navy"],
+      "status": "Everyday Comfort",
+      "image": "https://template-03-api.vercel.app/products/4.png",
+      "description": "Stay cozy in the Nike Sportswear Club Fleece hoodie. Made with soft, brushed-back fleece, this classic pullover offers warmth and comfort for everyday wear.",
+      "gender": "men"
+    },
+    {
+      "productName": "Nike React Phantom Run Flyknit 2",
+      "category": "Women's Running Shoes",
+      "price": 13995,
+      "inventory": 18,
+      "colors": ["Platinum Tint", "Crimson"],
+      "status": "Innovative Design",
+      "image": "https://template-03-api.vercel.app/products/5.png",
+      "description": "Experience the future of running with the Nike React Phantom Run Flyknit 2. Its laceless design and responsive React foam provide a smooth, comfortable ride for your daily runs.",
+      "gender": "women"
+    },
+    {
+      "productName": "Nike Dri-FIT Tapered",
+      "category": "Men's Woven Training Pants",
+      "price": 5495,
+      "inventory": 30,
+      "colors": ["Dark Gray", "Black"],
+      "status": "Versatile Performance",
+      "image": "https://template-03-api.vercel.app/products/6.png",
+      "description": "Maximize your workout potential with the Nike Dri-FIT Tapered training pants. These woven pants offer sweat-wicking comfort and a modern tapered fit for unrestricted movement during any activity.",
+      "gender": "men"
+    }
+  ]
