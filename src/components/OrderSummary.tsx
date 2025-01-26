@@ -8,11 +8,11 @@ export function OrderSummary() {
   const { cart } = useCart()
 
   const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0)
-  const shipping = 500
+  const shipping = 0
   const total = subtotal + shipping
 
   return (
-    <Card>
+    <Card className="w-full">
       <CardHeader>
         <CardTitle>Order Summary</CardTitle>
       </CardHeader>
@@ -24,7 +24,7 @@ export function OrderSummary() {
           </div>
           <div className="flex justify-between text-sm">
             <span>Delivery/Shipping</span>
-            <span>{shipping === 500 ? "Free" : `₹${shipping}`}</span>
+            <span>{shipping === 0 ? "Free" : `₹${shipping}`}</span>
           </div>
           <div className="flex justify-between font-semibold text-lg">
             <span>Total</span>
@@ -36,15 +36,16 @@ export function OrderSummary() {
           <p className="text-sm font-semibold">Arrives Mon, 27 Mar - Wed, 12 Apr</p>
           {cart.map((item) => (
             <div key={item.id} className="flex items-center space-x-4">
-              <Image
-                src={item.image || "/placeholder.svg"}
-                alt={item.productName}
-                width={96}
-                height={96}
-                className="rounded-md"
-              />
-              <div className="flex-1">
-                <p className="font-semibold">{item.productName}</p>
+              <div className="relative w-24 h-24 flex-shrink-0">
+                <Image
+                  src={item.image || "/placeholder.svg"}
+                  alt={item.productName}
+                  fill
+                  className="object-cover rounded-md"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="font-semibold truncate">{item.productName}</p>
                 <p className="text-sm text-gray-500">Quantity: {item.quantity}</p>
                 <p className="text-sm">₹{item.price.toFixed(2)}</p>
               </div>

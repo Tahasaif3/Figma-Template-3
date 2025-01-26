@@ -31,21 +31,21 @@ export function CheckoutForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData)
     toast.success("Order placed successfully!")
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-6">
       <h3 className="text-lg font-semibold">Enter your name and address:</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Input
           name="firstName"
           placeholder="First Name"
           value={formData.firstName}
           onChange={handleInputChange}
           required
+          className="w-full"
         />
         <Input
           name="lastName"
@@ -53,6 +53,7 @@ export function CheckoutForm() {
           value={formData.lastName}
           onChange={handleInputChange}
           required
+          className="w-full"
         />
         <Input
           name="addressLine1"
@@ -60,21 +61,21 @@ export function CheckoutForm() {
           value={formData.addressLine1}
           onChange={handleInputChange}
           required
-          className="col-span-2"
+          className="w-full col-span-full"
         />
         <Input
           name="addressLine2"
           placeholder="Address Line 2"
           value={formData.addressLine2}
           onChange={handleInputChange}
-          className="col-span-2"
+          className="w-full col-span-full"
         />
         <Input
           name="addressLine3"
           placeholder="Address Line 3"
           value={formData.addressLine3}
           onChange={handleInputChange}
-          className="col-span-2"
+          className="w-full col-span-full"
         />
         <Input
           name="postalCode"
@@ -82,10 +83,18 @@ export function CheckoutForm() {
           value={formData.postalCode}
           onChange={handleInputChange}
           required
+          className="w-full"
         />
-        <Input name="locality" placeholder="Locality" value={formData.locality} onChange={handleInputChange} required />
+        <Input
+          name="locality"
+          placeholder="Locality"
+          value={formData.locality}
+          onChange={handleInputChange}
+          required
+          className="w-full"
+        />
         <Select name="state" onValueChange={(value) => setFormData((prev) => ({ ...prev, state: value }))}>
-          <SelectTrigger>
+          <SelectTrigger className="w-full">
             <SelectValue placeholder="State/Territory" />
           </SelectTrigger>
           <SelectContent>
@@ -95,7 +104,7 @@ export function CheckoutForm() {
           </SelectContent>
         </Select>
         <Select name="country" defaultValue="India" disabled>
-          <SelectTrigger>
+          <SelectTrigger className="w-full">
             <SelectValue placeholder="Country" />
           </SelectTrigger>
           <SelectContent>
@@ -125,7 +134,7 @@ export function CheckoutForm() {
         </div>
       </div>
 
-      <h3 className="text-lg font-semibold mt-6">What`s your contact information?</h3>
+      <h3 className="text-lg font-semibold mt-6">What's your contact information?</h3>
       <Input
         name="email"
         type="email"
@@ -133,6 +142,7 @@ export function CheckoutForm() {
         value={formData.email}
         onChange={handleInputChange}
         required
+        className="w-full"
       />
       <Input
         name="phone"
@@ -141,10 +151,18 @@ export function CheckoutForm() {
         value={formData.phone}
         onChange={handleInputChange}
         required
+        className="w-full"
       />
 
-      <h3 className="text-lg font-semibold mt-6">What`s your PAN?</h3>
-      <Input name="pan" placeholder="PAN" value={formData.pan} onChange={handleInputChange} required />
+      <h3 className="text-lg font-semibold mt-6">What's your PAN?</h3>
+      <Input
+        name="pan"
+        placeholder="PAN"
+        value={formData.pan}
+        onChange={handleInputChange}
+        required
+        className="w-full"
+      />
       <div className="flex items-center space-x-2">
         <Checkbox id="savePAN" />
         <label
