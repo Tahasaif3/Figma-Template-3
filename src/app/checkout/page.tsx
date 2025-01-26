@@ -18,7 +18,7 @@ export default function CheckoutPage() {
               <div className="text-center md:text-left">
                 <h2 className="text-3xl font-semibold mb-4">How would you like to get your order?</h2>
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed max-w-[600px] mx-auto md:mx-0">
-                  Customs regulation for India requires a copy of the recipient's KYC. The address on this KYC needs to
+                  Customs regulation for India requires a copy of the recipient`s KYC. The address on this KYC needs to
                   match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC.{" "}
                   <a href="#" className="underline font-semibold">
                     Learn More
